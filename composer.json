@@ -1,0 +1,14 @@
+{
+    "name": "xand3rxx/xblog",
+    "description": "The Laravel X-Blog package is the easiest way to add a blog to your Laravel website.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthony Joboy",
+            "email": "anthonyjoboy2016@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^7.5"
+    }
+}
