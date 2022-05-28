@@ -1,14 +1,34 @@
 {
-    "name": "xand3rxx/xblog",
-    "description": "The Laravel X-Blog package is the easiest way to add a blog to your Laravel website.",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Anthony Joboy",
-            "email": "anthonyjoboy2016@gmail.com"
-        }
-    ],
-    "require-dev": {
-        "orchestra/testbench": "^7.5"
+  "name": "xand3rxx/xblog",
+  "description": "The Laravel X-Blog package is the easiest way to add a blog to your Laravel website.",
+  "keywords": [
+    "laravel",
+    "package",
+    "blog"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anthony Joboy",
+      "email": "anthonyjoboy2016@gmail.com"
     }
+  ],
+  "require-dev": {
+    "orchestra/testbench": "^7.5",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "xand3rxx\\XBlog\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "xand3rxx\\XBlog\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "erusev/parsedown": "^1.7"
+  }
 }
