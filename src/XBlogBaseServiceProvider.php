@@ -2,9 +2,9 @@
 
 namespace xand3rxx\XBlog;
 
-// use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class ServiceProvider extends ServiceProvider
+class XBlogBaseServiceProvider extends ServiceProvider
 {
     /**
      * Boot method of this service provider.
@@ -13,7 +13,7 @@ class ServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // nothing
+        $this->registerResources();
     }
 
     /**
@@ -24,5 +24,10 @@ class ServiceProvider extends ServiceProvider
     public function register()
     {
         // nothing
+    }
+
+    private function registerResources()
+    {
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 }
